@@ -1,31 +1,46 @@
 {
-  "name": "vue3-project-template",
-  "private": false,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "vue-tailwind-starter",
+  "version": "1.0.0",
+  "description": "Create Vue 3 + TailwindCSS projects with pre-configured templates",
+  "keywords": [
+    "vue",
+    "tailwindcss",
+    "vite",
+    "starter",
+    "template",
+    "cli"
+  ],
   "bin": {
-    "vue3-project-template": "./cli.mjs"
+    "vue-tailwind-starter": "./bin/index.js"
   },
+  "main": "lib/creator.js",
+  "files": [
+    "bin",
+    "lib",
+    "templates"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "test": "node bin/index.js create test-project --template minimal",
+    "test:all": "npm run test:minimal && npm run test:spa && npm run test:store && npm run test:full",
+    "test:minimal": "node bin/index.js create test-minimal --template minimal",
+    "test:spa": "node bin/index.js create test-spa --template spa",
+    "test:store": "node bin/index.js create test-store --template store",
+    "test:full": "node bin/index.js create test-full --template full",
+    "clean": "rm -rf test-* || true"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vue-tailwind-starter.git"
+  },
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "chalk": "^5.4.1",
-    "commander": "^14.0.0",
-    "execa": "^9.6.0",
-    "fs-extra": "^11.3.0",
-    "inquirer": "^12.8.2",
-    "tailwindcss": "^4.1.11",
-    "vue": "^3.5.17"
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
   },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.0",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.8.3",
-    "vite": "^7.0.4",
-    "vue-tsc": "^2.2.12"
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
