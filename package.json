@@ -30,9 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/vue-tailwind-starter.git"
+    "url": "https://github.com/jamespig/vue3-project-template"
   },
-  "author": "Your Name <your.email@example.com>",
+  "author": "Jamespig <james7766646@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",
