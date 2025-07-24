@@ -13,6 +13,7 @@
   "bin": {
     "vue-tailwind-starter": "./bin/index.mjs"
   },
+  "create": "node bin/index.mjs",
   "main": "lib/creator.mjs",
   "files": [
     "bin",
@@ -28,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamespig/vue3-project-template"
+    "url": "https://github.com/jamespig/vue-tailwindcss-starter"
   },
   "author": "Jamespig <james7766646@gmail.com>",
   "license": "MIT",
