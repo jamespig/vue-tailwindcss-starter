@@ -1,6 +1,6 @@
 {
   "name": "vue-tailwind-starter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create Vue 3 + TailwindCSS projects with pre-configured templates",
   "keywords": [
     "vue",
