@@ -20,13 +20,11 @@
     "templates"
   ],
   "scripts": {
-    "test": "node bin/index.js create test-project --template minimal",
-    "test:all": "npm run test:minimal && npm run test:spa && npm run test:store && npm run test:full",
-    "test:minimal": "node bin/index.js create test-minimal --template minimal",
-    "test:spa": "node bin/index.js create test-spa --template spa",
-    "test:store": "node bin/index.js create test-store --template store",
-    "test:full": "node bin/index.js create test-full --template full",
-    "clean": "rm -rf test-* || true"
+    "template": "node bin/index.mjs create template-project --template base",
+    "template:all": "npm run template:base && npm run template:router",
+    "template:base": "node bin/index.mjs create template-base --template base",
+    "template:router": "node bin/index.mjs create template-router --template router",
+    "clean": "rm -rf template-* || true"
   },
   "repository": {
     "type": "git",

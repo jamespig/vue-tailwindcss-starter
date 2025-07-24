@@ -20,11 +20,7 @@ program
 program
   .command("create <project-name>")
   .description("Create a new Vue + TailwindCSS project")
-  .option(
-    "-t, --template <template>",
-    "Template: minimal|spa|store|full",
-    "full"
-  )
+  .option("-t, --template <template>", "Template: base|router", "base")
   .action(async (projectName, options) => {
     try {
       console.log(chalk.blue.bold("🎨 Vue TailwindCSS Starter"));
@@ -41,15 +37,12 @@ program
 program.on("--help", () => {
   console.log("");
   console.log(chalk.cyan("Templates:"));
-  console.log("  minimal    Vue + TypeScript + TailwindCSS");
-  console.log("  spa        + Vue Router");
-  console.log("  store      + Vue Router + Pinia");
-  console.log("  full       + Vue Router + Pinia + Vitest + ESLint");
+  console.log("  base       Vue + TypeScript + TailwindCSS");
+  console.log("  router     + Vue Router");
   console.log("");
   console.log(chalk.cyan("Examples:"));
   console.log("  $ vue-tailwind-starter create my-project");
-  console.log("  $ vue-tailwind-starter create my-spa --template spa");
-  console.log("  $ vue-tailwind-starter create my-store --template store");
+  console.log("  $ vue-tailwind-starter create my-project --template router");
   console.log("");
 });
 
