@@ -16,7 +16,7 @@
 ## ✨ 功能特色
 
 - 🚀 **站在巨人的肩膀上** - 基於 Vite + Vue
-- 🎨 **預配置 TailwindCSS** - 開箱安裝好 TailwindCSS
+- 🎨 **預配置 TailwindCSS** - 開箱安裝好 TailwindCSS v4
 - 📦 **多種模板選擇** - 各種 Vue 生態系工具搭配（開發中）
 - 💻 **TypeScript 支援** - 完整的型別安全開發體驗
 
