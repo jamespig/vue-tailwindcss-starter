@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
-const { Command } = require("commander");
-const { createProject } = require("../lib/creator");
-const packageJson = require("../package.json");
-const chalk = require("chalk");
+import { Command } from "commander";
+import { createProject } from "../lib/creator.mjs";
+import fs from "fs-extra";
+import chalk from "chalk";
 
 const program = new Command();
+const packageJson = JSON.parse(
+  await fs.readFile(new URL("../package.json", import.meta.url), "utf8")
+);
 
 program
   .name("vue-tailwind-starter")

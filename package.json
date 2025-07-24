@@ -11,9 +11,9 @@
     "cli"
   ],
   "bin": {
-    "vue-tailwind-starter": "./bin/index.js"
+    "vue-tailwind-starter": "./bin/index.mjs"
   },
-  "main": "lib/creator.js",
+  "main": "lib/creator.mjs",
   "files": [
     "bin",
     "lib",

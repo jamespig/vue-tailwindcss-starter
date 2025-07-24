@@ -1,33 +1,39 @@
-# Vue TailwindCSS Minimal Template
+# temp-vue-project
 
-This is a minimal Vue 3 + TypeScript + TailwindCSS project created with vue-tailwind-starter.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Features
+## Recommended IDE Setup
 
-- ⚡ Vue 3 with Composition API
-- 🔧 TypeScript support
-- 🎨 TailwindCSS for styling
-- 📦 Vite for fast development
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Getting Started
+## Type Support for `.vue` Imports in TS
 
-```bash
-# Install dependencies
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
 npm install
+```
 
-# Start development server
+### Compile and Hot-Reload for Development
+
+```sh
 npm run dev
+```
 
-# Build for production
+### Type-Check, Compile and Minify for Production
+
+```sh
 npm run build
 ```
 
-## Template Type: Minimal
+### Lint with [ESLint](https://eslint.org/)
 
-This template includes only the essential packages:
-
-- Vue 3 + TypeScript
-- TailwindCSS
-- Vite build system
-
-Perfect for simple projects and learning!
+```sh
+npm run lint
+```
