@@ -5,21 +5,6 @@
 [![npm version](https://badge.fury.io/js/vue-tailwind-starter.svg)](https://badge.fury.io/js/vue-tailwind-starter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 專案初衷
-
-這個模板的誕生源於我對開發效率的追求。我很喜歡使用 Tailwind CSS，但每次建立新專案時都要重複安裝和設定實在是太麻煩了。同時，我也不喜歡在每次開啟 Vite 或 Vue 新專案時還要手動刪除不需要的預設內容。
-
-因此，我製作了這個 scaffold 工具，讓開發者能夠快速建立一個乾淨、預配置好的 Vue 3 + TailwindCSS 專案，專注於真正的開發工作而不是重複的設定工作。
-
-**歡迎有需要的開發者使用這個模板！** 如果您在使用過程中遇到任何問題或有改進建議，歡迎告訴我。
-
-## ✨ 功能特色
-
-- 🚀 **站在巨人的肩膀上** - 基於 Vite + Vue
-- 🎨 **預配置 TailwindCSS** - 開箱安裝好 TailwindCSS v4
-- 📦 **多種模板選擇** - 各種 Vue 生態系工具搭配（開發中）
-- 💻 **TypeScript 支援** - 完整的型別安全開發體驗
-
 ## 🚀 快速開始
 
 ### 安裝
@@ -44,6 +29,21 @@ npx vue-tailwind-starter create my-project --template base
 # 含路由版（開發中）
 npx vue-tailwind-starter create my-project --template router
 ```
+
+## 🎯 專案初衷
+
+這個模板的誕生源於我對開發效率的追求。我很喜歡使用 Tailwind CSS，但每次建立新專案時都要重複安裝和設定實在是太麻煩了。同時，我也不喜歡在每次開啟 Vite 或 Vue 新專案時還要手動刪除不需要的預設內容。
+
+因此，我製作了這個 scaffold 工具，讓開發者能夠快速建立一個乾淨、預配置好的 Vue 3 + TailwindCSS 專案，專注於真正的開發工作而不是重複的設定工作。
+
+**歡迎有需要的開發者使用這個模板！** 如果您在使用過程中遇到任何問題或有改進建議，歡迎告訴我。
+
+## ✨ 功能特色
+
+- 🚀 **站在巨人的肩膀上** - 基於 Vite + Vue
+- 🎨 **預配置 TailwindCSS** - 開箱安裝好 TailwindCSS v4
+- 📦 **多種模板選擇** - 各種 Vue 生態系工具搭配（開發中）
+- 💻 **TypeScript 支援** - 完整的型別安全開發體驗
 
 ## 📦 模板選項
 
