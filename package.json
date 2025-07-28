@@ -10,6 +10,9 @@
     "template",
     "cli"
   ],
+  "bin": {
+    "vue-tailwind-starter": "./bin/index.mjs"
+  },
   "create": "./bin/index.mjs",
   "main": "lib/creator.mjs",
   "files": [
